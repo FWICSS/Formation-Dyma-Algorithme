@@ -1,4 +1,4 @@
-class Stack {
+export class Stack {
     constructor() {
         this.array = new Array();
         this.top = -1;

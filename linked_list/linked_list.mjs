@@ -54,6 +54,11 @@ export class LinkedList {
 
     }
 
+    clear() {
+        this.head = null;
+        this.size = 0;
+    }
+
     remove(position) {
         let index = position;
         if (position < 0 || position > this.size - 1) {
@@ -84,7 +89,7 @@ export class LinkedList {
         } else {
             this.head = current.next;
             this.size--;
-            return "element supprimer au début : " + current.value;
+            return current.value;
         }
     }
 
@@ -147,6 +152,7 @@ export class LinkedList {
     }
 
 }
+
 function main() {
     const linkedList = new LinkedList();
     console.log("***************");
